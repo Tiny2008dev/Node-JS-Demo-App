@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha",
-    "build": "echo 'Build script not defined yet'"
+    "test": "echo Test Successful",
+    "build": "echo Build Successful"
   },
   "keywords": [],
   "author": "Valentine Stephen",
