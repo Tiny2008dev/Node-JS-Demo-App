@@ -1,20 +1,17 @@
 {
-  "name": "simple-nodejs-app",
+  "name": "node-js-demo-app",
   "version": "1.0.0",
-  "description": "A simple Node.js app for Jenkins pipeline demonstration",
+  "description": "Node.js application for Jenkins Pipeline demonstration",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "test": "echo Test Successful",
-    "build": "echo Build Successful"
+    "build": "echo Build Successful",
+    "deploy": "echo Deployment Successful",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "Valentine Stephen",
+  "author": "Devam Pithadia",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
-  },
-  "devDependencies": {
-    "mocha": "^10.7.3"
   }
 }
