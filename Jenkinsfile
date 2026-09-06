@@ -1,4 +1,5 @@
 pipeline {
+
     agent any
 
     tools {
@@ -10,13 +11,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/Tiny2008dev/Node-JS-Demo-App.git'
-            }
-        }
 
         stage('Install Dependencies') {
             steps {
@@ -38,18 +32,19 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat 'npm start'
+                bat 'npm run deploy'
             }
         }
     }
 
     post {
+
         success {
-            echo 'Pipeline completed successfully.'
+            echo 'Pipeline executed successfully.'
         }
 
         failure {
-            echo 'Pipeline failed.'
+            echo 'Pipeline execution failed.'
         }
 
         always {
